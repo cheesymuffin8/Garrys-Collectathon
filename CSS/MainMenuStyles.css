@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Roboto-Bold-C';
+    src: url("../Fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url("../Fonts/coolvetica.ttf");
+}
+
+a {
+    text-decoration: none
+}
+
+#initiate {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    font-family: "Coolvetica";
+}
+
+#initDivText {
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    padding: 1%;
+    background-color: rgba(107, 110, 114);
+    color: white;
+    font-size: 0.75vw;
+    border-radius: 0.2em;
+    letter-spacing: 0.05vw;
+    border: 0.15em solid  rgb(77, 79, 82);
+}
+
+@keyframes spin {
+	0%
+	{
+		transform: rotateZ(0deg);
+	}
+
+	50%
+	{
+		transform: rotateZ(180deg);
+	}
+
+	100%
+	{
+		transform: rotateZ(360deg);
+	}
+}
+
+.littleFace {
+    position: absolute;
+	animation-name: spin;
+	animation-duration: 10.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	text-align: center;
+	background-color: #fe7;
+	width: 1.3vw;
+    aspect-ratio: 1/1;
+	color: #999;
+	font-size: 0.9vw;
+	font-family: arial;
+	font-weight: bold;
+	border-radius: 0.15em;
+	display: inline-block;
+	border: 0.15vw solid #999;
+    bottom: 43%;
+}
+
+#bgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#gameVersion {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0.25%;
+    padding: 0.275%;
+    font-size: 0.5vw;
+    letter-spacing: 0.0045vw;
+    right: 0.1%;
+    border-radius: 0.2em;
+}
+
+/* Bottom Bar Stuff */
+
+.bottomButton {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    height: 80%;
+    bottom: 12%;
+    border-radius: 0.4em;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5vw;
+}
+
+#bottomBar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 4.5%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#Sbox_b {
+    width: 5.25%;
+    right: 0.2%;
+}
+
+#Sbox_b_Text {
+    position: absolute;
+    right: 11%;
+    top: 5%;
+}
+
+#Sbox_b_Img {
+    position: absolute;
+    width: 33%;
+    left: 4%;
+    top: 5%;
+}
+
+#Localization_b {
+    width: 2.1%;
+    right: 5.6%;
+}
+
+#Localization_b_Img {
+    width: 38%;
+}
+
+#Games_b {
+    width: 4.3%;
+    right: 7.8%;
+}
+
+#Games_b_Text {
+    position: absolute;
+    right: 11%;
+    top: 5%;
+}
+
+#Games_b_Img {
+    position: absolute;
+    width: 20%;
+    left: 14%;
+}
+
+#Problems_b {
+    width: 4.9%;
+    right: 12.25%;
+}
+
+#Problems_b_Text {
+    position: absolute;
+    right: 11%;
+    top: 5%;
+}
+
+#Problems_b_Amount {
+    position: absolute;
+    background-color: rgb(255, 200, 0);
+    left: -6%;
+    padding: 5%;
+    border-radius: 0.3em;
+    bottom: 40%;
+}
+
+#Problems_b_Img {
+    position: absolute;
+    width: 17%;
+    left: 13%;
+}
+
+/* Stuff On side of the screen */
+
+.MM_Button {
+    position: absolute;
+    display: flex;
+    font-family: "Roboto-Bold-C";
+    /*background-color: rgba(255,255,255, 0.5);*/
+    color: white;
+    left: 15%;
+    font-size: 1vw;  
+    letter-spacing: -0.01vw;
+    text-shadow: black 2px 2px;
+}
+
+.MM_Button:hover {
+    color: rgb(255, 255, 170);
+}
+
+#MM_Vignette {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#sideBar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    width: 30%;
+}
+
+#MM_Logo {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    top: 6.5%;
+    left: 15%;
+}

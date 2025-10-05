@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="CSS/MainMenuStyles.css">
+    <link rel="stylesheet" href="CSS/BaseStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preload" as="image" href="Levels/P01/P01_A01.png">
+</head>
+<audio id="HoverSFX">
+	<source src="Sounds/mp3/ui_hover.mp3"></source>
+	<source src="Sounds/ogg/ui_hover.ogg"></source>
+</audio>
+<body>
+
+    <!--Initiate Screen-->
+
+    <div id="initiate" onclick="this.remove()"> <!--I did this so that the hover sounds would play immedietly, cause for some reason websites don't allow sounds to be played unless the user has interacted with the website at all-->
+        <img src="ExtraImages/Vignette.png" alt="vignette" style="position: absolute; width: 100%; height: 100%; opacity: 0.5;">
+        <p class="unselectable-text" id="initDivText">click anywhere to start</p>
+        <img src="ExtraImages/gmod_logo_brave.png" alt="gmod logo brave" style="position: absolute; width: 10%; top: 35%;">
+        <div class="littleFace">:p</div>
+    </div>
+
+    <!--Game Screen-->
+
+    <div id="gameFrame">
+        <!-- Background Setup -->
+        <img id="bgImg" src="" alt="Garry's mod main menu background"></img>
+        <!-- Vignette Setup -->
+        <img id="MM_Vignette" src="ExtraImages/MainMenuShadow.png" alt="Vignette">
+        <!-- Sidebar Setup -->
+        <div id="sideBar">
+            <img id="MM_Logo" src="ExtraImages/MainMenuLogo.png" alt="Garry's mod main menu Logo">
+            <!--I didn't make every button do what they usualy do cause that would have made this way to difficult-->
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 22%;">Start New Game</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 24.5%;">Find Multiplayer Game</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 29.5%;">Addons</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 32.1%;">Dupes</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 34.7%;">Saves</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 37.3%;">Demos</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 42.5%;">Options</a>
+            <a class="MM_Button" href="Levels/P01/P01_A01.html" style="top: 47.8%;">Quit</a>
+        </div>
+
+        <a href="Levels/P01/P01_A01.html" id="gameVersion">You are on the x86-64 branch. Click here to find out more. ( 2025.09.23 )</a>
+
+        <!-- Bottom bar visual Setup -->
+        <div id="bottomBar">
+            <div class="bottomButton unselectable-text" id="Sbox_b">
+                <p id="Sbox_b_Text">Sandbox</p>
+                <img id="Sbox_b_Img" src="ExtraImages/SandboxIcon.png" alt=""></img>
+            </div>
+            <div class="bottomButton unselectable-text" id="Localization_b">
+                <img src="ExtraImages/EnglishFlag.png" id="Localization_b_Img"></img>
+            </div>
+            <div class="bottomButton unselectable-text" id="Games_b">
+                <p id="Games_b_Text">Games</p>
+                <img id="Games_b_Img" src="ExtraImages/GamesIcon.png" alt=""></img>
+            </div>
+            <div class="bottomButton unselectable-text" id="Problems_b">
+                <p id="Problems_b_Text">Problems</p>
+                <p id="Problems_b_Amount">3</p>
+                <img id="Problems_b_Img" src="ExtraImages/ErrorIcon.png" alt=""></img>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="JS/MainMenu/MainMenu.js"></script>
+</body>
+</html>
