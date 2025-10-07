@@ -71,9 +71,13 @@ html, body {
 .location {
     position: absolute;
     background-color: rgba(255,255,255,0);
-    border: 0.1vw dashed white;
+    /*border: 0.1vw dashed white;*/
     border-radius: 1vw;
     cursor: url("../ExtraImages/ArrowCursor.png"), auto;
+}
+
+.location:hover {
+  box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.34), inset 0 0 10vw rgba(255, 255, 255, 0.1);
 }
 
 .collect {
