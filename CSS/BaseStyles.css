@@ -74,7 +74,7 @@ html, body {
     /*border: 0.1vw dashed white;*/
     border-radius: 1vw;
     cursor: url("../ExtraImages/ArrowCursor.png"), auto;
-    box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0), inset 0 0 10vw rgba(255, 255, 255, 0);
+    box-shadow: none;
     transition: box-shadow 0.2s ease;
 }
 
